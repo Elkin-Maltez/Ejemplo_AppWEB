@@ -1,0 +1,16 @@
+<table id="customers">
+  <tr>
+    <th>ID</th>
+    <th>CEDULA</th>
+    <th>NOMBRES</th>
+    <th>APELLIDOS</th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let empleado of empleados">
+      <td>{{empleado.id}}</td>
+      <td>{{empleado.cedula}}</td>
+      <td>{{empleado.nombre1}}</td>
+      <td>{{empleado.apellido1}}</td>
+    </tr>
+  </tbody>
+</table>

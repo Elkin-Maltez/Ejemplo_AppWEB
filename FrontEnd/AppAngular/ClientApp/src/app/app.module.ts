@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ButtonAdd } from './Components/Button/Button.Components';
+import { ListarEmpleadoService } from 'src/app/Services/listar-empleado.service'
+import { ListarEmpleadoComponent } from './Components/Empleado/listar-empleado/listar-empleado.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,9 +30,10 @@ import { ButtonAdd } from './Components/Button/Button.Components';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'ListarEmpleados', component: ListarEmpleadoComponent },
     ])
   ],
-  providers: [],
+  providers: [ListarEmpleadoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
